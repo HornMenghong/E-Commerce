@@ -3,11 +3,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #02ccfe;
-  --color-primary-20: #02a3fe;
-  --color-primary-40: #017afe;
-  --color-secondary: #ff02fa;
-  --color-secondary-20: #cc02fb;
-  --color-secondary-40: #9901fc;
+  --color-primary: #1D64C2;
+  --color-dark: #373737;
   --font-roboto: "Roboto", sans-serif;
 }
