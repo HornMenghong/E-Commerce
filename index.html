@@ -25,14 +25,8 @@
   <header>
     <div class="relative">
       <!-- Hero Image -->
-      <img
-        class="w-full h-[minmax(500px,800px)] object-cover"
-        src="media/home/hero.jpg"
-        alt="Hero Image"
-      />
-      <nav
-        class="absolute top-0 left-0 flex items-center justify-between text-white w-full py-2"
-      >
+      <img class="w-full h-[500px] md:h-[800px] object-cover" src="media/home/hero.jpg"alt="Hero Image"/>
+      <nav class="absolute top-0 left-0 flex items-center justify-between text-white w-full py-2">
         <!-- Left Logo + Text -->
         <div class="flex items-center gap-2">
           <img class="h-12" src="media/logo.png" alt="Logo" />
@@ -50,24 +44,17 @@
 
         <!-- Right Logo -->
         <div class="mr-5">
-          <img
-            class="rounded-full h-12"
-            src="media/home/expert_2.jpg"
-            alt="Right Logo"
-          />
+          <img class="rounded-full h-12" src="media/home/expert_2.jpg" alt="Right Logo"/>
         </div>
       </nav>
 
       <!-- HERO TEXT -->
       <div class="absolute top-2/3 left-10">
-        <h1 class="text-4xl font-bold text-white">
+        <h1 class="text-3xl md:text-5xl font-bold text-white">
           <p>Every steps has a story</p>
           <p>Explore your path</p>
         </h1>
-        <a href="Shop.html"
-          ><button
-            class="mt-4 p-2 text-white bg-primary rounded-xl hover:bg-primary/80 cursor-pointer"
-        >
+        <a href="Shop.html"><button class="mt-4 p-2 text-white bg-primary rounded-xl hover:bg-primary/80 cursor-pointer">
           Shop now
         </button></a>
       </div>
@@ -79,8 +66,25 @@
       <section>
         <h2 class="text-2xl font-semibold my-4">Special Offering</h2>
         <hr class="mb-2">
-        <img class="rounded-xl" src="media/home/poster_1.jpg" alt="poster">
+        <img id="poster" class="rounded-3xl w-full xl:h-[600px] object-cover" src="" alt="poster">
       </section>
+      <script type="text/javascript">
+        const poster = document.getElementById("poster");
+        const posters = [
+          "/media/home/poster_1.jpg",
+          "/media/home/poster_2.jpg",
+          "/media/home/poster_3.jpg"
+        ];
+
+        let currentIndex = 0;
+
+        poster.src = posters[currentIndex];
+
+        setInterval(() => {
+          poster.src = posters[currentIndex];
+          currentIndex = (currentIndex + 1) % posters.length; // loop back to 0
+        }, 5000);
+      </script>
 
       <!-- Best Seller -->
       <section>
@@ -88,16 +92,18 @@
         <hr class="mb-2">
 
         <!-- card section -->
-        <div class="grid grid-cols-3 gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
           <!-- card -->
           <div class="p-2 bg-white rounded-xl flex flex-col gap-2">
             <div class="relative h-52 md:h-72 bg-black/20 rounded-xl grid place-content-center">
               <img src="media/home/card_3.png" alt="shoes">
               <i class="fa-regular fa-heart absolute top-2 right-2"></i>
             </div>
-            <h3 class="text-pink-300">Nike</h3>
-            <p>Nike Dunk Low GS 'Pink Velvet'</p>
-            <p class="text-dark">$99.90</p>
+            <div class="flex flex-col flex-grow">
+              <h3 class="text-pink-300">Nike</h3>
+              <p>Nike Dunk Low GS 'Pink Velvet'</p>
+              <p class="text-dark">$99.90</p>
+            </div>
             <button class="bg-dark p-2 rounded-xl text-white w-full hover:bg-primary cursor-pointer">See more</button>
           </div>
 
@@ -107,9 +113,11 @@
               <img src="media/home/card_2.png" alt="shoes">
               <i class="fa-regular fa-heart absolute top-2 right-2"></i>
             </div>
-            <h3 class="text-pink-300">Adidas</h3>
-            <p>Adidas OZWEEGO OG Shoes</p>
-            <p class="text-dark">$101.99</p>
+            <div class="flex flex-col flex-grow">
+              <h3 class="text-pink-300">Adidas</h3>
+              <p>Adidas OZWEEGO OG Shoes</p>
+              <p class="text-dark">$101.99</p>
+            </div>
             <button class="bg-dark p-2 rounded-xl text-white w-full hover:bg-primary cursor-pointer">See more</button>
           </div>
 
@@ -119,9 +127,11 @@
               <img src="media/home/card_1.png" alt="shoes">
               <i class="fa-regular fa-heart absolute top-2 right-2"></i>
             </div>
-            <h3 class="text-pink-300">Converse</h3>
-            <p>Converse All Star High Top</p>
-            <p class="text-dark">$99.90</p>
+            <div class="flex flex-col flex-grow">
+              <h3 class="text-pink-300">Converse</h3>
+              <p>Converse All Star High Top</p>
+              <p class="text-dark">$99.90</p>
+            </div>
             <button class="bg-dark p-2 rounded-xl text-white w-full hover:bg-primary cursor-pointer">See more</button>
           </div>
         </div>
@@ -132,8 +142,8 @@
         <h2 class="text-2xl font-semibold my-4">Why Us?</h2>
         <hr class="mb-4">
         <div class="grid md:grid-cols-2">
-          <img class="rounded-xl w-full" src="media/home/shoes_1.jpg" alt="company">
-          <div class="mx-4 my-auto w-full">
+          <img class="rounded-xl h-full w-full" src="media/home/shoes_1.jpg" alt="company">
+          <div class="md:mx-4 my-auto w-full">
             <p class="indent-8">At <b>Azure</b>, we’re passionate about helping you step confidently into every moment. Founded with a love for quality footwear and modern style, we offer a curated selection of shoes that combine comfort, durability, and design. Whether you're looking for everyday essentials or standout pieces, our mission is to bring you the perfect pair—every time.</p>
             <a href="#"><button class="bg-dark mx-auto mt-2 p-2 rounded-xl text-white hover:bg-primary cursor-pointer block">See more</button></a>
           </div>
@@ -145,8 +155,8 @@
         <h2 class="text-2xl font-semibold my-4">Our Partner</h2>
         <hr class="mb-4">
         <div class="grid md:grid-cols-2">
-          <img class="rounded-xl w-full" src="media/home/partner.webp" alt="company">
-          <div class="mx-4 my-auto w-full">
+          <img class="rounded-xl h-full w-full" src="media/home/partner.webp" alt="company">
+          <div class="md:mx-4 my-auto w-full">
             <p class="indent-8">At <b>Azure</b>, we believe in walking further—together. Alongside our own carefully crafted collections, we proudly collaborate with emerging and established shoe brands to bring you a diverse range of styles, innovation, and quality. By partnering with like-minded creators, we’re able to offer unique designs and exclusive drops that you won’t find anywhere else. Your perfect pair might just be one collab away.</p>
             <a href="#"><button class="bg-dark mx-auto mt-2 p-2 rounded-xl text-white hover:bg-primary cursor-pointer block">See more</button></a>
           </div>
@@ -158,7 +168,7 @@
   <footer>
     <div class="flex flex-col p-2 mx-5">
       <hr class="my-4 border-gray-500">  
-      <div class="flex justify-between">
+      <div class="flex flex-col md:flex-row justify-between">
         <!-- Logo Area -->
         <div class="flex items-center">
           <img class="h-24" src="media/logo.png" alt="logo">
@@ -166,9 +176,9 @@
         </div>
         
         <!-- Quick Link Area -->
-        <div class="mx-auto">
+        <div class="md:mx-auto">
           <h3 class="mb-2 font-semibold">Quick Link</h3>
-          <ul class="flex flex-col">
+          <ul class="flex justify-evenly md:flex-col gap-4 md:gap-0">
             <li><a class="hover:underline" href="/index.html">Home</a></li>
             <li><a class="hover:underline" href="/Shop.html">Shop</a></li>
             <li><a class="hover:underline" href="/about.html">About</a></li>
