@@ -22,20 +22,28 @@
 </head>
 <body class="bg-white">
 
-  <header>
-    <div class="relative">
-      <!-- Hero Image -->
-      <img class="w-full h-[500px] md:h-[800px] object-cover" src="media/home/hero.jpg"alt="Hero Image"/>
-      <div class="absolute inset-0 bg-black opacity-30"></div>
-      <nav class="absolute top-0 left-0 flex items-center justify-between text-white w-full py-2">
+<header>
+    
+  <div class="relative">
+    <!-- Hero Image -->
+    <img class="w-full h-[500px] md:h-[800px] object-cover" src="media/home/hero.jpg" alt="Hero Image"/>
+    <div class="absolute inset-0 bg-black opacity-30"></div>
+
+    <nav class="absolute top-0 left-0 w-full text-white py-2 px-4">
+      <div class="flex items-center justify-between">
         <!-- Left Logo + Text -->
         <div class="flex items-center gap-2">
           <img class="h-12" src="media/logo.png" alt="Logo" />
           <p class="text-primary font-semibold">Azure</p>
         </div>
 
-        <!-- Center Nav Links -->
-        <ul class="flex items-center gap-x-10">
+        <!-- Hamburger Button (Hidden on md and up) -->
+        <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none cursor-pointer">
+          <i id="menu-icon" class="fas fa-bars"></i>
+        </button>
+
+        <!-- Desktop Nav Links (Hidden on small screens) -->
+        <ul class="hidden md:flex items-center gap-x-10">
           <li><a class="text-primary underline" href="index.html">Home</a></li>
           <li><a class="hover:text-primary hover:underline" href="Shop.html">Shop</a></li>
           <li><a class="hover:text-primary hover:underline" href="about.html">About</a></li>
@@ -44,20 +52,52 @@
         </ul>
 
         <!-- Right Logo -->
-        <div class="mr-5">
+        <div class="hidden md:block mr-5">
           <img class="rounded-full h-12" src="media/home/expert_2.jpg" alt="Right Logo"/>
         </div>
-      </nav>
+      </div>
 
-      <!-- HERO TEXT -->
-      <div class="absolute top-2/3 left-10">
-        <h1 class="text-3xl md:text-5xl font-bold text-white">
-          <p>Every steps has a story</p>
-          <p>Explore your path</p>
+      <!-- Mobile Menu (Hidden by default) -->
+        <ul id="mobile-menu" class="md:hidden mt-3 space-y-2 bg-black/70 p-4 rounded hidden">
+          <li><a class="block text-primary underline" href="index.html">Home</a></li>
+          <li><a class="block hover:text-primary hover:underline" href="Shop.html">Shop</a></li>
+          <li><a class="block hover:text-primary hover:underline" href="about.html">About</a></li>
+          <li><a class="block hover:text-primary hover:underline" href="blog.html">Blog</a></li>
+          <li><a class="block hover:text-primary hover:underline" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+
+    menuToggle.addEventListener("click", function () {
+      menu.classList.toggle("hidden");
+
+      // Toggle icon
+      if (menu.classList.contains("hidden")) {
+        menuIcon.classList.remove("fa-x");
+        menuIcon.classList.add("fa-bars");
+      } else {
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-x");
+      }
+    });
+  </script>
+
+      <!-- HERO TEXT (Centered in the middle of the image) -->
+      <div class="absolute left-1/2 top-[35%] md:top-[50%] transform -translate-x-1/2 -translate-y-1/2 text-center">
+        <h1 class="text-2xl md:text-5xl font-bold text-white">
+          Every step has a story<br/>
+          Explore your path
         </h1>
-        <a href="Shop.html"><button class="mt-4 p-2 text-white bg-primary rounded-xl hover:bg-primary/80 cursor-pointer">
-          Shop now
-        </button></a>
+        <a href="Shop.html">
+          <button class="mt-4 p-2 text-white bg-primary rounded-xl hover:bg-primary/80">
+            Shop now
+          </button>
+        </a>
       </div>
     </div>
   </header>
@@ -193,7 +233,7 @@
         </div>
 
         <!-- Follow Area -->
-        <div class="w-[251px] mb-5">
+        <div class="w-[251px] my-5">
           <h3 class="mb-5 font-semibold">Follow Us</h3>
           <div>
             <i class="fa-brands fa-facebook text-5xl"></i>
@@ -204,7 +244,7 @@
       </div>
 
       <hr class="my-4 border-gray-500">
-      <p class="text-center">&copy; 2025 ShopNova. All rights reserved</p>
+      <p class="text-center">&copy; 2025 Azure. All rights reserved</p>
     </div>
   </footer>
 
