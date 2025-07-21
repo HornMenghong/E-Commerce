@@ -16,38 +16,67 @@
     <title>Shop</title>
   </head>
   <body>
-    <header class="shadow-md bg-white">
-      <nav class="flex justify-between items-center text-dark mx-5">
-        <div class="flex items-center">
-          <img class="h-12" src="media/logo.png" alt="Logo" />
-          <p>Azure</p>
+    <header>
+    
+    <div class="shadow-md">
+      <nav class="w-full py-2 px-4">
+        <div class="flex items-center justify-between">
+          <!-- Left Logo + Text -->
+          <div class="flex items-center gap-2">
+            <img class="h-12" src="media/logo.png" alt="Logo" />
+            <p class="text-primary font-semibold">Azure</p>
+          </div>
+
+          <!-- Hamburger Button (Hidden on md and up) -->
+          <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none cursor-pointer">
+            <i id="menu-icon" class="fas fa-bars"></i>
+          </button>
+
+          <!-- Desktop Nav Links (Hidden on small screens) -->
+          <ul class="hidden md:flex items-center gap-x-10">
+            <li><a class="hover:text-primary hover:underline" href="index.html">Home</a></li>
+            <li><a class="hover:text-primary hover:underline" href="Shop.html">Shop</a></li>
+            <li><a class="hover:text-primary hover:underline" href="about.html">About</a></li>
+            <li><a class="text-primary underline" href="blog.html">Blog</a></li>
+            <li><a class="hover:text-primary hover:underline" href="contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Right Logo -->
+          <div class="hidden md:block mr-5">
+            <img class="rounded-full h-12" src="media/home/expert_2.jpg" alt="Right Logo"/>
+          </div>
         </div>
-        <ul class="flex justify-between items-center gap-4">
-          <li>
-            <a class="hover:text-primary hover:underline" href="index.html"
-              >Home</a
-            >
-          </li>
-          <li><a class="text-primary underline" href="Shop.html">Shop</a></li>
-          <li>
-            <a class="hover:text-primary hover:underline" href="about.html"
-              >About</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-primary hover:underline" href="blog.html"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-primary hover:underline" href="contact.html"
-              >Contact</a
-            >
-          </li>
+
+      <!-- Mobile Menu (Hidden by default) -->
+        <ul id="mobile-menu" class="md:hidden mt-3 space-y-2 text-white bg-black/70 p-4 rounded hidden">
+          <li><a class="block hover:text-primary hover:underline" href="index.html">Home</a></li>
+          <li><a class="block hover:text-primary hover:underline" href="Shop.html">Shop</a></li>
+          <li><a class="block hover:text-primary hover:underline" href="about.html">About</a></li>
+          <li><a class="block text-primary underline" href="blog.html">Blog</a></li>
+          <li><a class="block hover:text-primary hover:underline" href="contact.html">Contact</a></li>
         </ul>
-        <img class="rounded-full h-12" src="media/home/expert_2.jpg" alt="" />
       </nav>
-    </header>
+    </div>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+
+      menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+
+        // Toggle icon
+        if (menu.classList.contains("hidden")) {
+          menuIcon.classList.remove("fa-x");
+          menuIcon.classList.add("fa-bars");
+        } else {
+          menuIcon.classList.remove("fa-bars");
+          menuIcon.classList.add("fa-x");
+        }
+      });
+    </script>
+  </header>
 
     <main>
       <!-- poster -->
@@ -328,18 +357,22 @@
 
 
     <footer>
-    <div class="flex flex-col p-2 mx-5 mt-10 bg-white w-full">
+    <div class="flex flex-col p-2 mx-5">
       <hr class="my-4 border-gray-500">  
       <div class="flex flex-col md:flex-row justify-between">
         <!-- Logo Area -->
-        <div class="flex items-center">
+        <div class="flex items-center justify-around">
           <img class="h-24" src="media/logo.png" alt="logo">
           <p class="w-32">Your destination for colorful and stylist shoes</p>
+          <div class="flex items-center">
+          <img class="h-24" src="media/ISTAD.png" alt="ISTAD">
+          <h3 class="text-2xl font-semibold">ISTAD</h3>
+        </div>
         </div>
         
         <!-- Quick Link Area -->
-        <div class="md:mx-auto">
-          <h3 class="mb-2 font-semibold">Quick Link</h3>
+        <div class="my-5">
+          <h3 class="mb-5 font-semibold">Quick Link</h3>
           <ul class="flex justify-evenly md:flex-col gap-4 md:gap-0">
             <li><a class="hover:underline" href="/index.html">Home</a></li>
             <li><a class="hover:underline" href="/Shop.html">Shop</a></li>
@@ -350,8 +383,8 @@
         </div>
 
         <!-- Follow Area -->
-        <div class="w-[251px]">
-          <h3 class="mb-2 font-semibold">Follow Us</h3>
+        <div class="w-[251px] my-5">
+          <h3 class="mb-5 font-semibold">Follow Us</h3>
           <div>
             <i class="fa-brands fa-facebook text-5xl"></i>
             <i class="fa-brands fa-instagram text-5xl"></i>
@@ -361,7 +394,7 @@
       </div>
 
       <hr class="my-4 border-gray-500">
-      <p class="text-center">&copy; 2025 ShopNova. All rights reserved</p>
+      <p class="text-center">&copy; 2025 Azure. All rights reserved</p>
     </div>
   </footer>
 
