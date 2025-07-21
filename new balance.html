@@ -15,7 +15,7 @@
       referrerpolicy="no-referrer"
     />
 </head>
-<body class="bg-[#D9D9D9]">
+<body>
     <!-- Head -->
     <header class="shadow-md bg-white">
       <nav class="flex justify-between items-center text-dark mx-5">
@@ -50,229 +50,234 @@
       </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="bg-yellow-100 px-6 py-12 rounded-b-3xl">
-      <div class="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
-        <div class="md:w-1/2">
-          <h1 class="text-4xl font-bold mb-2">Are you ready to <span class="text-black">lead the way</span></h1>
-          <p class="mb-6 text-gray-600">Luxury meets ultimate sitting comfort</p>
-          <button class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800">Discover →</button>
-        </div>
-        <div class="md:w-1/2 mt-8 md:mt-0">
-          <img src="shoes-banner.png" alt="Shoes" class="w-full" />
-        </div>
-      </div>
-    </section>
-
-          <!-- categories and search -->
-      <section class="container">
-        <div class="flex justify-between items-center">
-          <button class="text-2xl text-blue-800">Catagories</button>
+    <main>
+      <div class="mx-10">
+        <!-- Hero -->
+        <section class="relative">
+          <img src="media/shop/newBalancew_poster.jpg" alt="Shoes" class="w-full object-cover rounded-2xl md:h-160"/>
+          <div class="absolute bottom-2 left-10">
+            <div class="text-white">
+              <h1 class="text-3xl md:text-5xl font-bold mb-4">Are you ready to lead the way</h1>
+              <p class="mb-6">Luxury meets ultimate sitting comfort</p>
+            </div>
+          </div>
+        </section>
+        <!-- categories and search -->
+        <section class="container my-10 flex justify-center">
           <div class="flex items-center gap-2">
             <input
               type="search"
               placeholder="Search..."
               class="border px-4 py-2 rounded w-64"
             />
-            <button class="bg-blue-600 text-white px-4 py-2 rounded">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer">
               <i class="fas fa-search"></i>
             </button>
           </div>
-        </div>
-      </section>
-
-
-    <!-- button of categories -->
-      <section class="container">
-        <div
-          class="flex flex-col md:flex-row justify-between items-center gap-4 my-15">
-          <div class="flex flex-wrap gap-10 px-20">
-            <button class="hover:bg-blue-600 hover:text-white border px-4 py-2 rounded">
-              All Products
-            </button>
-            <a href="productDetail.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white">Nike</button>
+        </section>
+        <!-- button of categories -->
+        <section class="container">
+          <div class="flex flex-wrap justify-start md:justify-center gap-10">
+            <a href="Shop.html">
+              <button class="border hover:bg-blue-600 hover:text-white px-4 py-2 rounded cursor-pointer">
+                All Products
+              </button>
             </a>
-            <a href="productDetail.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white">Adidas</button>
+            <a href="nike.html">
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Nike</button>
             </a>
-            <a href="productDetail.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white">Convers</button>
+            <a href="adidas.html">
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Adidas</button>
             </a>
-            <a href="productDetail.html">
-              <button class="border px-8 py-2 rounded bg-blue-600 text-white">New Balance</button>
+            <a href="convers.html">
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Converse</button>
             </a>
-            <a href="productDetail.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white">Puma</button>
+            <a href="new balance.html">
+              <button class="px-8 py-2 rounded bg-blue-600 text-white cursor-pointer">New Balance</button>
             </a>
-            <a href="productDetail.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white">Vans</button>
+            <a href="puma.html">
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Puma</button>
+            </a>
+            <a href="vans.html">
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Vans</button>
             </a>
           </div>
-        </div>
-      </section>
-
-    <!-- Products -->
-    <section class="max-w-7xl mx-auto px-6 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      <!-- Product Card 1 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
-          <img src="https://assets.footlocker.com/is/image/FLDM/PC9060FR_04?bfc=on&fmt=webp-alpha&wid=500&hei=500" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">Kid Foot Locker</h3>
-          <p class="text-sm text-gray-600 line-through">$67.00</p>
-          <p class="text-lg font-bold text-gray-800">$65.00</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
+        </section>
+        <!-- Products -->
+        <section class="max-w-7xl mx-auto mt-10 px-6 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Product Card 1 -->
+          <a href="productDetail.html#newbalance">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
+                <img src="https://assets.footlocker.com/is/image/FLDM/PC9060FR_04?bfc=on&fmt=webp-alpha&wid=500&hei=500" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Kid Foot Locker</h3>
+                <p class="text-sm text-gray-600 line-through">$67.00</p>
+                <p class="text-lg font-bold text-gray-800">$65.00</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 2 -->
+          <a href="productDetail.html#newbalance">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
+                <img src="https://everythingbutta.com/cdn/shop/files/NewBalance9060ArcticGrey.png?v=1686169341" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">New Balance 9060 Arctic Gray</h3>
+                <p class="text-sm text-gray-600 line-through">$299.00</p>
+                <p class="text-lg font-bold text-gray-800">$180.00</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 3 -->
+          <a href="productDetail.html#newbalance">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
+                <img src="https://newcop.com/cdn/shop/files/02_ab9c9b79-050f-420f-b240-b0ef2b2748aa.png?v=1730817297&width=1445" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">New Balance 9060 Magnet</h3>
+                <p class="text-sm text-gray-600 line-through">$299.00</p>
+                <p class="text-lg font-bold text-gray-800">$180.00</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 4 -->
+          <a href="productDetail.html#newbalance">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
+                <img src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_new-balance-991v2-made-in-uk-grey-orange.png" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">New Balance 991v2</h3>
+                <p class="text-sm text-gray-600 line-through">$299.00</p>
+                <p class="text-lg font-bold text-gray-800">$180.00</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 5 -->
+          <a href="productDetail.html#newbalance">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
+                <img src="https://cartomy.com/wp-content/uploads/2024/07/New-Balance-327-Walking-Sneakers-Green-Main-Photoroom.png" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Walking Sneaker</h3>
+                <p class="text-sm text-gray-600 line-through">$65.00</p>
+                <p class="text-lg font-bold text-gray-800">$59.00</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 6 -->
+          <a href="productDetail.html#newbalance">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
+                <img src="https://cartomy.com/wp-content/uploads/2024/07/New-Balance-327-Walking-Sneakers-Beige-Main-Photoroom.png" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Walking Sneaker</h3>
+                <p class="text-sm text-gray-600 line-through">$89.00</p>
+                <p class="text-lg font-bold text-gray-800">$96.00</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 7 -->
+          <a href="productDetail.html#newbalance">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
+                <img src="https://arrowandbeast.com/cdn/shop/files/ABxNB-574VAB-Product-01.png?v=1751698805" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">New Balance Numberic</h3>
+                <p class="text-sm text-gray-600 line-through">$67.00</p>
+                <p class="text-lg font-bold text-gray-800">$56.00</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 8 -->
+          <a href="productDetail.html#newbalance">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 ">
+                <img src="https://images.footlocker.com/is/image/FLEU/314216961004_02?wid=500&hei=500" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Foot Locker Hungary</h3>
+                <p class="text-sm text-gray-600 line-through">$78.00</p>
+                <p class="text-lg font-bold text-gray-800">$68.00</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
       </div>
-
-      <!-- Product Card 2 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
-          <img src="https://everythingbutta.com/cdn/shop/files/NewBalance9060ArcticGrey.png?v=1686169341" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">New Balance 9060 Arctic Gray</h3>
-          <p class="text-sm text-gray-600 line-through">$299.00</p>
-          <p class="text-lg font-bold text-gray-800">$180.00</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product Card 3 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
-          <img src="https://newcop.com/cdn/shop/files/02_ab9c9b79-050f-420f-b240-b0ef2b2748aa.png?v=1730817297&width=1445" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">New Balance 9060 Magnet</h3>
-          <p class="text-sm text-gray-600 line-through">$299.00</p>
-          <p class="text-lg font-bold text-gray-800">$180.00</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product Card 4 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
-          <img src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_new-balance-991v2-made-in-uk-grey-orange.png" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">New Balance 991v2</h3>
-          <p class="text-sm text-gray-600 line-through">$299.00</p>
-          <p class="text-lg font-bold text-gray-800">$180.00</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product Card 5 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
-          <img src="https://cartomy.com/wp-content/uploads/2024/07/New-Balance-327-Walking-Sneakers-Green-Main-Photoroom.png" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">Walking Sneaker</h3>
-          <p class="text-sm text-gray-600 line-through">$65.00</p>
-          <p class="text-lg font-bold text-gray-800">$59.00</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product Card 6 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
-          <img src="https://cartomy.com/wp-content/uploads/2024/07/New-Balance-327-Walking-Sneakers-Beige-Main-Photoroom.png" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">Walking Sneaker</h3>
-          <p class="text-sm text-gray-600 line-through">$89.00</p>
-          <p class="text-lg font-bold text-gray-800">$96.00</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product Card 7 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 flex justify-center items-center">
-          <img src="https://arrowandbeast.com/cdn/shop/files/ABxNB-574VAB-Product-01.png?v=1751698805" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">New Balance Numberic</h3>
-          <p class="text-sm text-gray-600 line-through">$67.00</p>
-          <p class="text-lg font-bold text-gray-800">$56.00</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product Card 8 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-gray-100 ">
-          <img src="https://images.footlocker.com/is/image/FLEU/314216961004_02?wid=500&hei=500" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">Foot Locker Hungary</h3>
-          <p class="text-sm text-gray-600 line-through">$78.00</p>
-          <p class="text-lg font-bold text-gray-800">$68.00</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-    </section>
+    </main>
 
     <footer>
-    <div class="flex flex-col p-2 mx-5 mt-10 bg-white w-full">
+    <div class="flex flex-col p-2 mx-5">
       <hr class="my-4 border-gray-500">  
       <div class="flex flex-col md:flex-row justify-between">
         <!-- Logo Area -->
-        <div class="flex items-center">
+        <div class="flex items-center justify-around">
           <img class="h-24" src="media/logo.png" alt="logo">
           <p class="w-32">Your destination for colorful and stylist shoes</p>
+          <div class="flex items-center">
+          <img class="h-24" src="media/ISTAD.png" alt="ISTAD">
+          <h3 class="text-2xl font-semibold">ISTAD</h3>
+        </div>
         </div>
         
         <!-- Quick Link Area -->
-        <div class="md:mx-auto">
-          <h3 class="mb-2 font-semibold">Quick Link</h3>
+        <div class="my-5">
+          <h3 class="mb-5 font-semibold">Quick Link</h3>
           <ul class="flex justify-evenly md:flex-col gap-4 md:gap-0">
             <li><a class="hover:underline" href="/index.html">Home</a></li>
             <li><a class="hover:underline" href="/Shop.html">Shop</a></li>
@@ -283,8 +288,8 @@
         </div>
 
         <!-- Follow Area -->
-        <div class="w-[251px]">
-          <h3 class="mb-2 font-semibold">Follow Us</h3>
+        <div class="w-[251px] my-5">
+          <h3 class="mb-5 font-semibold">Follow Us</h3>
           <div>
             <i class="fa-brands fa-facebook text-5xl"></i>
             <i class="fa-brands fa-instagram text-5xl"></i>
@@ -294,7 +299,7 @@
       </div>
 
       <hr class="my-4 border-gray-500">
-      <p class="text-center">&copy; 2025 ShopNova. All rights reserved</p>
+      <p class="text-center">&copy; 2025 Azure. All rights reserved</p>
     </div>
   </footer>
     

@@ -15,7 +15,7 @@
       referrerpolicy="no-referrer"
     />
 </head>
-<body class="bg-[#D9D9D9]">
+<body>
     <!-- Head -->
     <header class="shadow-md bg-white">
       <nav class="flex justify-between items-center text-dark mx-5">
@@ -50,230 +50,234 @@
       </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="bg-yellow-100 px-6 py-12 rounded-b-3xl">
-      <div class="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
-        <div class="md:w-1/2">
-          <h1 class="text-4xl font-bold mb-2">Are you ready to <span class="text-black">lead the way</span></h1>
-          <p class="mb-6 text-gray-600">Luxury meets ultimate sitting comfort</p>
-          <button class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800">Discover →</button>
-        </div>
-        <div class="md:w-1/2 mt-8 md:mt-0">
-          <img src="shoes-banner.png" alt="Shoes" class="w-full" />
-        </div>
-      </div>
-    </section>
-
-          <!-- categories and search -->
-      <section class="container">
-        <div class="flex justify-between items-center">
-          <button class="text-2xl text-blue-800">Catagories</button>
+    <main>
+      <div class="mx-10">
+        <!-- Hero -->
+        <section class="relative">
+          <img src="media/shop/converse_poster.jpg" alt="Shoes" class="w-full object-cover rounded-2xl md:h-160"/>
+          <div class="absolute bottom-2 left-10">
+            <div class="text-white">
+              <h1 class="text-3xl md:text-5xl font-bold mb-4">Are you ready to lead the way</h1>
+              <p class="mb-6">Luxury meets ultimate sitting comfort</p>
+            </div>
+          </div>
+        </section>
+        <!-- categories and search -->
+        <section class="container my-10 flex justify-center">
           <div class="flex items-center gap-2">
             <input
               type="search"
               placeholder="Search..."
               class="border px-4 py-2 rounded w-64"
             />
-            <button class="bg-blue-600 text-white px-4 py-2 rounded">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer">
               <i class="fas fa-search"></i>
             </button>
           </div>
-        </div>
-      </section>
-
-
-    <!-- button of categories -->
-      <section class="container">
-        <div
-          class="flex flex-col md:flex-row justify-between items-center gap-4 my-15">
-          <div class="flex flex-wrap gap-10 px-20">
-            <button class="hover:bg-blue-600 hover:text-white border px-4 py-2 rounded">
-              All Products
-            </button>
+        </section>
+        <!-- button of categories -->
+        <section class="container">
+          <div class="flex flex-wrap justify-start md:justify-center gap-10">
+            <a href="Shop.html">
+              <button class="border hover:bg-blue-600 hover:text-white px-4 py-2 rounded cursor-pointer">
+                All Products
+              </button>
+            </a>
             <a href="nike.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hpv
-              text-black">Nike</button>
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Nike</button>
             </a>
             <a href="adidas.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white">Adidas</button>
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Adidas</button>
             </a>
             <a href="convers.html">
-              <button class="border px-8 py-2 rounded bg-blue-600 text-white">Convers</button>
+              <button class="px-8 py-2 rounded bg-blue-600 text-white cursor-pointer">Converse</button>
             </a>
-            <a href="newbalance.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white">New Balance</button>
+            <a href="new balance.html">
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">New Balance</button>
             </a>
             <a href="puma.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white">Puma</button>
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Puma</button>
             </a>
             <a href="vans.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white">Vans</button>
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Vans</button>
             </a>
           </div>
-        </div>
-      </section>
-
-    <!-- Products -->
-    <section class="max-w-7xl mx-auto px-6 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      <!-- Product Card 1 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
-          <img src="https://d2q7r0rjkm1t8k.cloudfront.net/uplister/images/451f8279e6e5aa3b2a06cce1e1f0ca90.png" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">Convers Unisex</h3>
-          <p class="text-sm text-gray-600 line-through">$149.00</p>
-          <p class="text-lg font-bold text-gray-800">$145.00</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
+        </section>
+        <!-- Products -->
+        <section class="max-w-7xl mx-auto mt-10 px-6 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Product Card 1 -->
+          <a href="productDetail.html#convers">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
+                <img src="https://d2q7r0rjkm1t8k.cloudfront.net/uplister/images/451f8279e6e5aa3b2a06cce1e1f0ca90.png" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Convers Unisex</h3>
+                <p class="text-sm text-gray-600 line-through">$149.00</p>
+                <p class="text-lg font-bold text-gray-800">$145.00</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 2 -->
+          <a href="productDetail.html#convers">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100">
+                <img src="https://d2q7r0rjkm1t8k.cloudfront.net/uplister/images/face504d90a619737f6173fc91df1e08.png" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Convers Chuck Taylor</h3>
+                <p class="text-sm text-gray-600 line-through">$239.00</p>
+                <p class="text-lg font-bold text-gray-800">$150.00</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 3 -->
+          <a href="productDetail.html#convers">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
+                <img src="https://www.clickandsport.fr/34346-home_default/chuck-taylor-all-star-seasonal-color.jpg" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Convers femme rose</h3>
+                <p class="text-sm text-gray-600 line-through">$199.00</p>
+                <p class="text-lg font-bold text-gray-800">$80.00</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 4 -->
+          <a href="productDetail.html#convers">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
+                <img src="https://static.vecteezy.com/system/resources/previews/047/606/132/non_2x/converse-shoes-isolated-on-transparent-background-png.png" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Convers Shoes isolated</h3>
+                <p class="text-sm text-gray-600 line-through">$259.00</p>
+                <p class="text-lg font-bold text-gray-800">$100.30</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 5 -->
+          <a href="productDetail.html#convers">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
+                <img src="https://adaptive-images.uooucdn.com.br/ik-seo/tr:w-1100,h-1594,c-at_max,pr-true,q-80/a22343-ogxys3ltwt0/pv/50/75/30/6c900ae65fe1b8dc1c84dfc918/tenis-converse-chuck-taylor-all-star-lift-seasonal-colors-verde-large-2.png" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Chunk taylor all star</h3>
+                <p class="text-sm text-gray-600 line-through">$129.20</p>
+                <p class="text-lg font-bold text-gray-800">$96.74</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 6 -->
+          <a href="productDetail.html#convers">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
+                <img src="https://www.sneakerjagers.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2Fq8dm2rrUomK7aaJfHFfPC7sbjIcPUFn5ZU5X6lny.png&w=3840&q=100" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Convers Vintage White</h3>
+                <p class="text-sm text-gray-600 line-through">$219.20</p>
+                <p class="text-lg font-bold text-gray-800">$160.10</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 7 -->
+          <a href="productDetail.html#convers">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
+                <img src="https://render.nikeid.com/ir/render/nikeidrender/ctasHiMBBSU19_v6?obj=%2Fs%2Fg13&color=73abde&show=&obj=%2Fs%2Fg10&color=f4f6ef&show=&obj=%2Fs%2Fg18&color=9a7343&show=&obj=%2Fs%2Fg14&color=f4f6ef&show=&obj=%2Fs%2Fg1&color=f9d5bf&show=&obj=%2Fs%2Fg2&color=f9d5bf&show=&obj=%2Fs%2Fg3&color=f9d5bf&show=&obj=%2Fs%2Fg4&color=d1e7e1&show=&obj=%2Fs%2Fg9&color=f4f6ef&show=&obj=%2Fs%2Fg17%2Fshiny&color=c5c2c1&show=&obj=%2Fs%2Fg21%2Fwave&show=&obj=%2Fs%2Fg11&color=f4f6ef&show=&obj=%2Fs%2Fg12&color=f9d5bf&show=&obj=%2Fs%2Fg24&color=f4f6ef&show=&obj=%2Fs%2Fg23&color=f4f6ef&show=&obj=%2Fs&req=object&fmt=png-alpha&icc=AdobeRGB&wid=1600" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Millie Bobby Brown</h3>
+                <p class="text-sm text-gray-600 line-through">$123.80</p>
+                <p class="text-lg font-bold text-gray-800">$114.00</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Product Card 8 -->
+          <a href="productDetail.html#convers">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition cursor-pointer">
+              <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
+                <img src="https://d2bzx2vuetkzse.cloudfront.net/images_without_background/8684557f-a33a-42ba-a038-56ddfb12525d.png" alt="" class="h-60 object-contain" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Convers Sky Blue Sneaker</h3>
+                <p class="text-sm text-gray-600 line-through">$91.12</p>
+                <p class="text-lg font-bold text-gray-800">$78.00</p>
+                <p class="text-sm mt-1">Colors</p>
+                <div class="flex gap-1 mt-1">
+                  <span class="w-3 h-3 rounded-full bg-purple-800"></span>
+                  <span class="w-3 h-3 rounded-full bg-black"></span>
+                  <span class="w-3 h-3 rounded-full bg-gray-500"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
       </div>
-
-      <!-- Product Card 2 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100">
-          <img src="https://d2q7r0rjkm1t8k.cloudfront.net/uplister/images/face504d90a619737f6173fc91df1e08.png" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">Convers Chuck Taylor</h3>
-          <p class="text-sm text-gray-600 line-through">$239.00</p>
-          <p class="text-lg font-bold text-gray-800">$150.00</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product Card 3 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
-          <img src="https://www.clickandsport.fr/34346-home_default/chuck-taylor-all-star-seasonal-color.jpg" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">Convers femme rose</h3>
-          <p class="text-sm text-gray-600 line-through">$199.00</p>
-          <p class="text-lg font-bold text-gray-800">$80.00</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product Card 4 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
-          <img src="https://static.vecteezy.com/system/resources/previews/047/606/132/non_2x/converse-shoes-isolated-on-transparent-background-png.png" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">Convers Shoes isolated</h3>
-          <p class="text-sm text-gray-600 line-through">$259.00</p>
-          <p class="text-lg font-bold text-gray-800">$100.30</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product Card 5 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
-          <img src="https://adaptive-images.uooucdn.com.br/ik-seo/tr:w-1100,h-1594,c-at_max,pr-true,q-80/a22343-ogxys3ltwt0/pv/50/75/30/6c900ae65fe1b8dc1c84dfc918/tenis-converse-chuck-taylor-all-star-lift-seasonal-colors-verde-large-2.png" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">Chunk taylor all star</h3>
-          <p class="text-sm text-gray-600 line-through">$129.20</p>
-          <p class="text-lg font-bold text-gray-800">$96.74</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product Card 6 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
-          <img src="https://www.sneakerjagers.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2Fq8dm2rrUomK7aaJfHFfPC7sbjIcPUFn5ZU5X6lny.png&w=3840&q=100" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">Convers Vintage White</h3>
-          <p class="text-sm text-gray-600 line-through">$219.20</p>
-          <p class="text-lg font-bold text-gray-800">$160.10</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product Card 7 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
-          <img src="https://render.nikeid.com/ir/render/nikeidrender/ctasHiMBBSU19_v6?obj=%2Fs%2Fg13&color=73abde&show=&obj=%2Fs%2Fg10&color=f4f6ef&show=&obj=%2Fs%2Fg18&color=9a7343&show=&obj=%2Fs%2Fg14&color=f4f6ef&show=&obj=%2Fs%2Fg1&color=f9d5bf&show=&obj=%2Fs%2Fg2&color=f9d5bf&show=&obj=%2Fs%2Fg3&color=f9d5bf&show=&obj=%2Fs%2Fg4&color=d1e7e1&show=&obj=%2Fs%2Fg9&color=f4f6ef&show=&obj=%2Fs%2Fg17%2Fshiny&color=c5c2c1&show=&obj=%2Fs%2Fg21%2Fwave&show=&obj=%2Fs%2Fg11&color=f4f6ef&show=&obj=%2Fs%2Fg12&color=f9d5bf&show=&obj=%2Fs%2Fg24&color=f4f6ef&show=&obj=%2Fs%2Fg23&color=f4f6ef&show=&obj=%2Fs&req=object&fmt=png-alpha&icc=AdobeRGB&wid=1600" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">Millie Bobby Brown</h3>
-          <p class="text-sm text-gray-600 line-through">$123.80</p>
-          <p class="text-lg font-bold text-gray-800">$114.00</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product Card 8 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
-        <div class="p-4 bg-gradient-to-tr from-blue-100 to-yellow-100 flex justify-center items-center">
-          <img src="https://d2bzx2vuetkzse.cloudfront.net/images_without_background/8684557f-a33a-42ba-a038-56ddfb12525d.png" alt="" class="h-60 object-contain" />
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold">Convers Sky Blue Sneaker</h3>
-          <p class="text-sm text-gray-600 line-through">$91.12</p>
-          <p class="text-lg font-bold text-gray-800">$78.00</p>
-          <p class="text-sm mt-1">Colors</p>
-          <div class="flex gap-1 mt-1">
-            <span class="w-3 h-3 rounded-full bg-purple-800"></span>
-            <span class="w-3 h-3 rounded-full bg-black"></span>
-            <span class="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
-        </div>
-      </div>
-
-    </section>
+    </main>
 
     <footer>
-    <div class="flex flex-col p-2 mx-5 mt-10 bg-white w-full">
+    <div class="flex flex-col p-2 mx-5">
       <hr class="my-4 border-gray-500">  
       <div class="flex flex-col md:flex-row justify-between">
         <!-- Logo Area -->
-        <div class="flex items-center">
+        <div class="flex items-center justify-around">
           <img class="h-24" src="media/logo.png" alt="logo">
           <p class="w-32">Your destination for colorful and stylist shoes</p>
+          <div class="flex items-center">
+          <img class="h-24" src="media/ISTAD.png" alt="ISTAD">
+          <h3 class="text-2xl font-semibold">ISTAD</h3>
+        </div>
         </div>
         
         <!-- Quick Link Area -->
-        <div class="md:mx-auto">
-          <h3 class="mb-2 font-semibold">Quick Link</h3>
+        <div class="my-5">
+          <h3 class="mb-5 font-semibold">Quick Link</h3>
           <ul class="flex justify-evenly md:flex-col gap-4 md:gap-0">
             <li><a class="hover:underline" href="/index.html">Home</a></li>
             <li><a class="hover:underline" href="/Shop.html">Shop</a></li>
@@ -284,8 +288,8 @@
         </div>
 
         <!-- Follow Area -->
-        <div class="w-[251px]">
-          <h3 class="mb-2 font-semibold">Follow Us</h3>
+        <div class="w-[251px] my-5">
+          <h3 class="mb-5 font-semibold">Follow Us</h3>
           <div>
             <i class="fa-brands fa-facebook text-5xl"></i>
             <i class="fa-brands fa-instagram text-5xl"></i>
@@ -295,7 +299,7 @@
       </div>
 
       <hr class="my-4 border-gray-500">
-      <p class="text-center">&copy; 2025 ShopNova. All rights reserved</p>
+      <p class="text-center">&copy; 2025 Azure. All rights reserved</p>
     </div>
   </footer>
     
