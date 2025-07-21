@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="shortcut icon" href="media/logo.png" type="image/x-icon" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-[#D9D9D9]">
+    <main>
+    <!-- Nike -->
+      <section id="nike">
+        <div class="container  min-h-screen p-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-15">
+          <!-- Product Image Section -->
+          <div class="space-y-4">
+            <div class="relative bg-white rounded-xl p-6">
+              <span
+                class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-lg font-semibold text-sm"
+              >
+                $99.98
+              </span>
+              <img
+                src="./media/shop/nikePink.webp"
+                alt="Main Product"
+                class="mx-auto max-h-80 object-contain"
+              />
+            </div>
+
+            <!-- Thumbnails -->
+            <div class="flex justify-center gap-4">
+              <img
+                src="./media/shop/nike1.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/nike2.png"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/nike3.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/nike4.avif"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+            </div>
+          </div>
+
+          <!-- Product Info Section -->
+          <div class="space-y-10">
+            <h1 class="text-3xl font-semibold">
+              Women’s Low-Top Track and Field Shoes
+            </h1>
+            <hr />
+
+            <!-- Colors -->
+            <div>
+              <p class="font-semibold mb-2">Colors</p>
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-pink-400 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-red-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-blue-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-purple-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-green-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-lime-300 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-orange-500 cursor-pointer"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Sizes -->
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold mb-2">Size (UK Men)</p>
+                <div class="flex flex-wrap gap-2">
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    39
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    40
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    41
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-700 text-white rounded cursor-pointer"
+                  >
+                    42
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="font-semibold mb-2 invisible lg:visible">
+                  Size Guide
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    43
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    44
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    45
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quantity -->
+            <div>
+              <p class="font-semibold mb-2">Quantity</p>
+              <div class="flex items-center gap-4">
+                <button class="w-8 h-8 bg-white border rounded text-xl">
+                  -
+                </button>
+                <input
+                  type="text"
+                  value="1"
+                  class="w-12 text-center border rounded bg-white"
+                />
+                <button class="w-8 h-8 bg-white border rounded text-xl">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 mt-4">
+              <button
+                class="bg-gray-700 text-white px-6 py-3 rounded-xl w-full sm:w-auto"
+              >
+                Add to Bag
+              </button>
+              <button
+                class="border border-gray-400 px-6 py-3 rounded-xl w-full sm:w-auto"
+              >
+                Favorite <i class="fa-regular fa-heart ml-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Adidas -->
+      <section id="adidas">
+        <div class="container  min-h-screen p-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-15">
+          <!-- Product Image Section -->
+          <div class="space-y-4">
+            <div class="relative bg-white rounded-xl p-6">
+              <span
+                class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-lg font-semibold text-sm"
+              >
+                $99.98
+              </span>
+              <img
+                src="./media/shop/adidas1.png"
+                alt="Main Product"
+                class="mx-auto max-h-80 object-contain"
+              />
+            </div>
+
+            <!-- Thumbnails -->
+            <div class="flex justify-center gap-4">
+              <img
+                src="./media/shop/adidas2.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/adidas3.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/adidas4.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/adidas5.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+            </div>
+          </div>
+
+          <!-- Product Info Section -->
+          <div class="space-y-10">
+            <h1 class="text-3xl font-semibold">
+              Women’s Low-Top Track and Field Shoes
+            </h1>
+            <hr />
+
+            <!-- Colors -->
+            <div>
+              <p class="font-semibold mb-2">Colors</p>
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-pink-400 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-red-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-blue-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-purple-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-green-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-lime-300 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-orange-500 cursor-pointer"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Sizes -->
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold mb-2">Size (UK Men)</p>
+                <div class="flex flex-wrap gap-2">
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    39
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    40
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    41
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-700 text-white rounded cursor-pointer"
+                  >
+                    42
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="font-semibold mb-2 invisible lg:visible">
+                  Size Guide
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    43
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    44
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    45
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quantity -->
+            <div>
+              <p class="font-semibold mb-2">Quantity</p>
+              <div class="flex items-center gap-4">
+                <button class="w-8 h-8 bg-white border rounded text-xl">
+                  -
+                </button>
+                <input
+                  type="text"
+                  value="1"
+                  class="w-12 text-center border rounded bg-white"
+                />
+                <button class="w-8 h-8 bg-white border rounded text-xl">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 mt-4">
+              <button
+                class="bg-gray-700 text-white px-6 py-3 rounded-xl w-full sm:w-auto"
+              >
+                Add to Bag
+              </button>
+              <button
+                class="border border-gray-400 px-6 py-3 rounded-xl w-full sm:w-auto"
+              >
+                Favorite <i class="fa-regular fa-heart ml-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Convers -->
+      <section id="convers">
+        <div class="container  min-h-screen p-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-15">
+          <!-- Product Image Section -->
+          <div class="space-y-4">
+            <div class="relative bg-white rounded-xl p-6">
+              <span
+                class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-lg font-semibold text-sm"
+              >
+                $99.98
+              </span>
+              <img
+                src="./media/shop/convers1.webp"
+                alt="Main Product"
+                class="mx-auto max-h-80 object-contain"
+              />
+            </div>
+
+            <!-- Thumbnails -->
+            <div class="flex justify-center gap-4">
+              <img
+                src="./media/shop/convers2.png"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/convers3.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/convers4.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/convers5.png"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+            </div>
+          </div>
+
+          <!-- Product Info Section -->
+          <div class="space-y-10">
+            <h1 class="text-3xl font-semibold">
+              Women’s Low-Top Track and Field Shoes
+            </h1>
+            <hr />
+
+            <!-- Colors -->
+            <div>
+              <p class="font-semibold mb-2">Colors</p>
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-pink-400 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-red-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-blue-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-purple-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-green-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-lime-300 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-orange-500 cursor-pointer"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Sizes -->
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold mb-2">Size (UK Men)</p>
+                <div class="flex flex-wrap gap-2">
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    39
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    40
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    41
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-700 text-white rounded cursor-pointer"
+                  >
+                    42
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="font-semibold mb-2 invisible lg:visible">
+                  Size Guide
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    43
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    44
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    45
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quantity -->
+            <div>
+              <p class="font-semibold mb-2">Quantity</p>
+              <div class="flex items-center gap-4">
+                <button class="w-8 h-8 bg-white border rounded text-xl">
+                  -
+                </button>
+                <input
+                  type="text"
+                  value="1"
+                  class="w-12 text-center border rounded bg-white"
+                />
+                <button class="w-8 h-8 bg-white border rounded text-xl">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 mt-4">
+              <button
+                class="bg-gray-700 text-white px-6 py-3 rounded-xl w-full sm:w-auto"
+              >
+                Add to Bag
+              </button>
+              <button
+                class="border border-gray-400 px-6 py-3 rounded-xl w-full sm:w-auto"
+              >
+                Favorite <i class="fa-regular fa-heart ml-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- New Balance -->
+      <section id="newbalance">
+        <div class="container  min-h-screen p-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-15">
+          <!-- Product Image Section -->
+          <div class="space-y-4">
+            <div class="relative bg-white rounded-xl p-6">
+              <span
+                class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-lg font-semibold text-sm"
+              >
+                $99.98
+              </span>
+              <img
+                src="./media/shop/newbalance1.webp"
+                alt="Main Product"
+                class="mx-auto max-h-80 object-contain"
+              />
+            </div>
+
+            <!-- Thumbnails -->
+            <div class="flex justify-center gap-4">
+              <img
+                src="./media/shop/newbalance2.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/newbalance3.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/newbalance4.jpg"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/newbalance5.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+            </div>
+          </div>
+
+          <!-- Product Info Section -->
+          <div class="space-y-10">
+            <h1 class="text-3xl font-semibold">
+              Women’s Low-Top Track and Field Shoes
+            </h1>
+            <hr />
+
+            <!-- Colors -->
+            <div>
+              <p class="font-semibold mb-2">Colors</p>
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-pink-400 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-red-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-blue-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-purple-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-green-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-lime-300 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-orange-500 cursor-pointer"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Sizes -->
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold mb-2">Size (UK Men)</p>
+                <div class="flex flex-wrap gap-2">
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    39
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    40
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    41
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-700 text-white rounded cursor-pointer"
+                  >
+                    42
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="font-semibold mb-2 invisible lg:visible">
+                  Size Guide
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    43
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    44
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    45
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quantity -->
+            <div>
+              <p class="font-semibold mb-2">Quantity</p>
+              <div class="flex items-center gap-4">
+                <button class="w-8 h-8 bg-white border rounded text-xl">
+                  -
+                </button>
+                <input
+                  type="text"
+                  value="1"
+                  class="w-12 text-center border rounded bg-white"
+                />
+                <button class="w-8 h-8 bg-white border rounded text-xl">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 mt-4">
+              <button
+                class="bg-gray-700 text-white px-6 py-3 rounded-xl w-full sm:w-auto"
+              >
+                Add to Bag
+              </button>
+              <button
+                class="border border-gray-400 px-6 py-3 rounded-xl w-full sm:w-auto"
+              >
+                Favorite <i class="fa-regular fa-heart ml-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Puma -->
+      <section id="puma">
+        <div class="container  min-h-screen p-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-15">
+          <!-- Product Image Section -->
+          <div class="space-y-4">
+            <div class="relative bg-white rounded-xl p-6">
+              <span
+                class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-lg font-semibold text-sm"
+              >
+                $99.98
+              </span>
+              <img
+                src="./media/shop/puma1.avif"
+                alt="Main Product"
+                class="mx-auto max-h-80 object-contain"
+              />
+            </div>
+
+            <!-- Thumbnails -->
+            <div class="flex justify-center gap-4">
+              <img
+                src="./media/shop/puma2.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/puma3.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/puma4.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/puma5.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+            </div>
+          </div>
+
+          <!-- Product Info Section -->
+          <div class="space-y-10">
+            <h1 class="text-3xl font-semibold">
+              Women’s Low-Top Track and Field Shoes
+            </h1>
+            <hr />
+
+            <!-- Colors -->
+            <div>
+              <p class="font-semibold mb-2">Colors</p>
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-pink-400 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-red-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-blue-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-purple-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-green-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-lime-300 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-orange-500 cursor-pointer"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Sizes -->
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold mb-2">Size (UK Men)</p>
+                <div class="flex flex-wrap gap-2">
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    39
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    40
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    41
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-700 text-white rounded cursor-pointer"
+                  >
+                    42
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="font-semibold mb-2 invisible lg:visible">
+                  Size Guide
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    43
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    44
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    45
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quantity -->
+            <div>
+              <p class="font-semibold mb-2">Quantity</p>
+              <div class="flex items-center gap-4">
+                <button class="w-8 h-8 bg-white border rounded text-xl">
+                  -
+                </button>
+                <input
+                  type="text"
+                  value="1"
+                  class="w-12 text-center border rounded bg-white"
+                />
+                <button class="w-8 h-8 bg-white border rounded text-xl">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 mt-4">
+              <button
+                class="bg-gray-700 text-white px-6 py-3 rounded-xl w-full sm:w-auto"
+              >
+                Add to Bag
+              </button>
+              <button
+                class="border border-gray-400 px-6 py-3 rounded-xl w-full sm:w-auto"
+              >
+                Favorite <i class="fa-regular fa-heart ml-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Vans -->
+      <section id="vans">
+        <div class="container  min-h-screen p-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-15">
+          <!-- Product Image Section -->
+          <div class="space-y-4">
+            <div class="relative bg-white rounded-xl p-6">
+              <span
+                class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-lg font-semibold text-sm"
+              >
+                $99.98
+              </span>
+              <img
+                src="./media/shop/vans1.webp"
+                alt="Main Product"
+                class="mx-auto max-h-80 object-contain"
+              />
+            </div>
+
+            <!-- Thumbnails -->
+            <div class="flex justify-center gap-4">
+              <img
+                src="./media/shop/vans2.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/vans3.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/vans4.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+              <img
+                src="./media/shop/vans5.webp"
+                class="w-30 h-30 rounded-lg object-contain bg-white p-2 cursor-pointer hover:scale-105 transition"
+              />
+            </div>
+          </div>
+
+          <!-- Product Info Section -->
+          <div class="space-y-10">
+            <h1 class="text-3xl font-semibold">
+              Women’s Low-Top Track and Field Shoes
+            </h1>
+            <hr />
+
+            <!-- Colors -->
+            <div>
+              <p class="font-semibold mb-2">Colors</p>
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-pink-400 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-red-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-blue-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-purple-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-green-500 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-lime-300 cursor-pointer"
+                ></div>
+                <div
+                  class="w-8 h-8 rounded-full bg-orange-500 cursor-pointer"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Sizes -->
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold mb-2">Size (UK Men)</p>
+                <div class="flex flex-wrap gap-2">
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    39
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    40
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-400 text-white rounded cursor-pointer"
+                  >
+                    41
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-700 text-white rounded cursor-pointer"
+                  >
+                    42
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="font-semibold mb-2 invisible lg:visible">
+                  Size Guide
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    43
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    44
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-gray-300 text-black rounded cursor-pointer"
+                  >
+                    45
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quantity -->
+            <div>
+              <p class="font-semibold mb-2">Quantity</p>
+              <div class="flex items-center gap-4">
+                <button class="w-8 h-8 bg-white border rounded text-xl">
+                  -
+                </button>
+                <input
+                  type="text"
+                  value="1"
+                  class="w-12 text-center border rounded bg-white"
+                />
+                <button class="w-8 h-8 bg-white border rounded text-xl">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 mt-4">
+              <button
+                class="bg-gray-700 text-white px-6 py-3 rounded-xl w-full sm:w-auto"
+              >
+                Add to Bag
+              </button>
+              <button
+                class="border border-gray-400 px-6 py-3 rounded-xl w-full sm:w-auto"
+              >
+                Favorite <i class="fa-regular fa-heart ml-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    
+    </main>
+  </body>
+</html>

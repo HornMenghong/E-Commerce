@@ -1,9 +1,16 @@
 /* Import Roboto Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+@import "flowbite/src/themes/default";
 
 @theme {
   --color-primary: #1D64C2;
   --color-dark: #373737;
   --font-roboto: "Roboto", sans-serif;
+}
+
+@layer{
+  .container{
+    @apply max-w-7xl mx-auto mt-6;
+  }
 }
