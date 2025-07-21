@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="shortcut icon" href="media/logo.png" type="image/x-icon">
+  <!-- FontAwesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Blog</title>
+</head>
+<body>
+
+  <header>
+    
+  <div class="shadow-md">
+    <nav class="w-full py-2 px-4">
+      <div class="flex items-center justify-between">
+        <!-- Left Logo + Text -->
+        <div class="flex items-center gap-2">
+          <img class="h-12" src="media/logo.png" alt="Logo" />
+          <p class="text-primary font-semibold">Azure</p>
+        </div>
+
+        <!-- Hamburger Button (Hidden on md and up) -->
+        <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none cursor-pointer">
+          <i id="menu-icon" class="fas fa-bars"></i>
+        </button>
+
+        <!-- Desktop Nav Links (Hidden on small screens) -->
+        <ul class="hidden md:flex items-center gap-x-10">
+          <li><a class="hover:text-primary hover:underline" href="index.html">Home</a></li>
+          <li><a class="hover:text-primary hover:underline" href="Shop.html">Shop</a></li>
+          <li><a class="hover:text-primary hover:underline" href="about.html">About</a></li>
+          <li><a class="text-primary underline" href="blog.html">Blog</a></li>
+          <li><a class="hover:text-primary hover:underline" href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Right Logo -->
+        <div class="hidden md:block mr-5">
+          <img class="rounded-full h-12" src="media/home/expert_2.jpg" alt="Right Logo"/>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (Hidden by default) -->
+        <ul id="mobile-menu" class="md:hidden mt-3 space-y-2 text-white bg-black/70 p-4 rounded hidden">
+          <li><a class="block hover:text-primary hover:underline" href="index.html">Home</a></li>
+          <li><a class="block hover:text-primary hover:underline" href="Shop.html">Shop</a></li>
+          <li><a class="block hover:text-primary hover:underline" href="about.html">About</a></li>
+          <li><a class="block text-primary underline" href="blog.html">Blog</a></li>
+          <li><a class="block hover:text-primary hover:underline" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+
+    menuToggle.addEventListener("click", function () {
+      menu.classList.toggle("hidden");
+
+      // Toggle icon
+      if (menu.classList.contains("hidden")) {
+        menuIcon.classList.remove("fa-x");
+        menuIcon.classList.add("fa-bars");
+      } else {
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-x");
+      }
+    });
+  </script>
+  </header>
+
+  <main>
+    <div class="mx-10">
+      <h1 class="text-3xl font-bold mb-2">Blog</h1>
+      <h2 class="text-xl font-semibold mb-4">Top Trending Sneakers You’ll See Everywhere in 2025</h2>
+      <p class="mb-8 text-gray-600">
+        Sneakers in 2025 are all about style, comfort, and performance. Think breathable materials,
+        cool new designs, and bright color palettes. Here’s what’s trending — from retro revivals
+        to futuristic styles that make every step stylish.
+      </p>
+
+      <!-- Image Grid -->
+      <div class="grid grid-cols-2 gap-4 mb-10">
+        <img src="media/blog/Nike dunk -head.jpg" alt="Sneaker 1" class="rounded-lg object-cover w-full h-64">
+        <img src="media/blog/adidas campus head.jpg" alt="Sneaker 2" class="rounded-lg object-cover w-full h-64">
+        <img src="media/blog/speed cat puma-head.jpg" alt="Sneaker 3" class="rounded-lg object-cover w-full h-64">
+        <img src="media/blog/convers-head.avif" alt="Sneaker 4" class="rounded-lg object-cover w-full h-64">
+        
+      </div>
+
+      <!-- first Blog Card -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="media/blog/new balance pair.jpg" alt="Sneaker Feature" class="w-full object-cover">
+        <div class="p-6">
+          <p class="text-sm text-gray-500 mb-2">📅 July 18, 2025</p>
+          <h3 class="text-xl font-semibold mb-2">Effortless Style: The Sneakers Everyone’s Wearing in 2025 👟✨</h3>
+          <p class="text-gray-600 text-sm">
+            2025 is all about comfy-cool sneakers. From chunky soles to sleek runners, you’ll see them on your
+            IG feed, at the mall, and even in the office. These styles are designed to go with everything — and
+            they’ll keep your feet happy, too. Whether you're into streetwear or sporty chic, there’s a perfect
+            pair out there for you.
+          </p>
+        </div>
+      </div>
+      
+      <!--second blog card-->
+        <section class="max-w-5xl mx-auto px-4 py-10 bg-gray-100">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+            <!-- Small sneaker images -->
+            <div class="space-y-4 md:col-span-1">
+              <div class="bg-pink-100 p-4 rounded-xl">
+                <img src="media/blog/Nike dunk low blue 1.webp" alt="Nike Dunk 1" class="rounded-xl object-contain w-full h-auto">
+              </div>
+              <div class="bg-pink-100 p-4 rounded-xl">
+                <img src="media/blog/jordan blue.webp" alt="jordan blue" class="rounded-xl object-contain w-full h-auto">
+              </div>
+            </div>
+
+            <!-- Large sneaker photo -->
+            <div class="md:col-span-2">
+              <img src="media/blog/Nike dunk low blue.jpg" alt="Main Sneaker" class="rounded-xl w-full object-cover">
+            </div>
+          </div>
+          
+
+          <!-- Text Content -->
+          <div class="mt-6">
+            <p class="text-sm text-gray-500 flex items-center gap-1 mb-2">
+              📅 July 12, 2025
+            </p>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">
+              Cool Kicks: The Blue Nike Dunk Lows Everyone Wants in 2025 💙👟
+            </h2>
+            <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+              Fresh, fun, and full of energy — the blue Nike Dunk Low is making waves this year. With its vibrant aqua tones and crisp white base, this sneaker brings a splash of cool to any outfit. Whether you're rocking them with denim, joggers, or an oversized tee, these kicks instantly elevate your look. The bold swoosh and smooth leather finish add just the right amount of street flair. In 2025, color is key, and this Dunk Low proves that standing out doesn’t have to be loud — it just has to be you. Trendy, comfortable, and impossible to ignore, this is a sneaker you'll be seeing (and wearing!) everywhere.
+            </p>
+          </div>
+        </section>
+      <!--third blog card-->
+      <section class="max-w-5xl mx-auto px-4 py-10 bg-gray-100">
+        <!-- PUMA Image -->
+        <div class="w-full mb-6">
+          <img src="media/blog/Speedcat-puma card.avif" alt="PUMA Black Sneakers" class="rounded-xl w-full object-cover">
+        </div>
+
+        <!-- Blog Text -->
+        <div>
+          <p class="text-sm text-gray-500 flex items-center gap-1 mb-2">
+            📅 July 11, 2025
+          </p>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">
+            Sporty & Sleek: Why PUMA’s Black Sneakers Are Owning 2025 🖤👟
+          </h2>
+          <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+            Minimalist. Bold. Effortless. That’s the energy these black PUMA sneakers bring in 2025. Paired with a relaxed oversized shirt and clean white socks, this look captures the perfect balance between sporty and streetwear. While darker hues are often underrated, confidence is all you need to feel cool and comfy — and this outfit speaks confidence without trying too hard. Black-on-black sneakers are trending this year because they go with everything — and they add instant edge to even the simplest outfits. This is a look you’ll see everywhere in 2025, and trust us, it’s worth stepping into.
+          </p>
+        </div>
+      </section>
+    
+      <!-- forth blog card-->
+      <section class="max-w-6xl mx-auto p-6 flex flex-col md:flex-row gap-6 items-start">
+        <!-- Left image -->
+        <div class="w-full md:w-1/2">
+          <img src="media/blog/adidas pink brown.jpg" alt="Adidas Campus pink brown girl" class="rounded-lg w-full object-cover">
+        </div>
+
+        <!-- Text content -->
+        <div class="w-full md:w-1/2">
+          <p class="text-sm text-gray-500 mb-1">📅 July 14, 2025</p>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">
+            Classic Meets Cute: <br />
+            The Adidas Campus in Brown & Pink
+          </h2>
+          <p class="text-gray-700 text-base">
+            If you're on the hunt for sneakers that blend timeless style with a playful twist, let us introduce you to your next wardrobe favorite — the Adidas Campus in brown with soft pink accents. This sneaker is more than just footwear; it's a perfect mix of retro vibes and everyday wearability.
+          </p>
+        </div>
+      </section>
+
+      <!-- Product Image -->
+      <div class="max-w-6xl mx-auto px-6 mt-4 flex justify-center">
+        <div class="bg-pink-100 p-4 rounded-xl">
+          <img src="media/blog/adidaas pink brown.avif" alt="Adidas Campus pink brown" class="w-48 object-contain">
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <hr class="my-10 border-gray-300 max-w-6xl mx-auto" />
+      <!-- fifth blog card-->
+      <section class="max-w-7xl mx-auto px-6 py-10 flex flex-col lg:flex-row gap-8">
+        
+        <!-- Text + Shoe Thumbs -->
+        <div class="lg:w-1/2 space-y-5">
+          <p class="text-sm text-gray-500">📅 July 15, 2025</p>
+          <h2 class="text-3xl font-bold text-gray-900">
+            Chunky Meets Cool: <br />
+            The Converse Run Star Motion High Tops
+          </h2>
+          <p class="text-gray-700">
+            If you're ready to step into the spotlight — literally — the Converse Run Star Motion is your perfect pair. With its eye-catching design and bold personality, this sneaker is built for those who like to stand out and stay comfortable doing it.
+          </p>
+
+          <!-- Shoe Thumbnails -->
+          <div class="grid grid-cols-2">
+            <div class="bg-yellow-100 p-3 rounded-xl">
+              <img src="media/blog/converse-BLACK-Run-Star-Motion-Hi-Sneakers.webp" alt="Converse Worn" class="w-full object-cover">
+            </div>
+            <div class="bg-yellow-100 p-3 rounded-xl">
+              <img src="media/blog/Converse-card2.webp" alt="Converse Product" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="lg:w-1/2">
+          <div class="bg-yellow-200 p-2 rounded-xl">
+            <img src="media/blog/Converse-card1.webp" alt="Models Wearing Converse" class="w-full rounded-lg object-cover">
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="flex flex-col p-2 mx-5">
+      <hr class="my-4 border-gray-500">  
+      <div class="flex flex-col md:flex-row justify-between">
+        <!-- Logo Area -->
+        <div class="flex items-center justify-around">
+          <img class="h-24" src="media/logo.png" alt="logo">
+          <p class="w-32">Your destination for colorful and stylist shoes</p>
+          <div class="flex items-center">
+          <img class="h-24" src="media/ISTAD.png" alt="ISTAD">
+          <h3 class="text-2xl font-semibold">ISTAD</h3>
+        </div>
+        </div>
+        
+        <!-- Quick Link Area -->
+        <div class="my-5">
+          <h3 class="mb-5 font-semibold">Quick Link</h3>
+          <ul class="flex justify-evenly md:flex-col gap-4 md:gap-0">
+            <li><a class="hover:underline" href="/index.html">Home</a></li>
+            <li><a class="hover:underline" href="/Shop.html">Shop</a></li>
+            <li><a class="hover:underline" href="/about.html">About</a></li>
+            <li><a class="hover:underline" href="/blog.html">Blog</a></li>
+            <li><a class="hover:underline" href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Follow Area -->
+        <div class="w-[251px] my-5">
+          <h3 class="mb-5 font-semibold">Follow Us</h3>
+          <div>
+            <i class="fa-brands fa-facebook text-5xl"></i>
+            <i class="fa-brands fa-instagram text-5xl"></i>
+            <i class="fa-brands fa-x-twitter text-5xl"></i>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4 border-gray-500">
+      <p class="text-center">&copy; 2025 Azure. All rights reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>

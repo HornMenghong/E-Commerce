@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="shortcut icon" href="media/logo.png" type="image/x-icon" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Shop</title>
+  </head>
+  <body>
+    <div class="relative">
+
+      <nav class="absolute top-0 left-0 w-full py-2 px-4">
+        <div class="flex items-center justify-between">
+          <!-- Left Logo + Text -->
+          <div class="flex items-center gap-2">
+            <img class="h-12" src="media/logo.png" alt="Logo" />
+            <p class="font-semibold">Azure</p>
+          </div>
+
+          <!-- Hamburger Button (Hidden on md and up) -->
+          <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none cursor-pointer">
+            <i id="menu-icon" class="fas fa-bars"></i>
+          </button>
+
+          <!-- Desktop Nav Links (Hidden on small screens) -->
+          <ul class="hidden md:flex items-center gap-x-10">
+            <li><a class="hover:text-primary hover:underline" href="index.html">Home</a></li>
+            <li><a class="text-primary underline" href="Shop.html">Shop</a></li>
+            <li><a class="hover:text-primary hover:underline" href="about.html">About</a></li>
+            <li><a class="hover:text-primary hover:underline" href="blog.html">Blog</a></li>
+            <li><a class="hover:text-primary hover:underline" href="contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Right Logo -->
+          <div class="hidden md:block mr-5">
+            <img class="rounded-full h-12" src="media/home/expert_2.jpg" alt="Right Logo"/>
+          </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+          <ul id="mobile-menu" class="md:hidden mt-3 space-y-2 text-white bg-black/70 p-4 rounded hidden">
+            <li><a class="block hover:text-primary hover:underline" href="index.html">Home</a></li>
+            <li><a class="block text-primary underline" href="Shop.html">Shop</a></li>
+            <li><a class="block hover:text-primary hover:underline" href="about.html">About</a></li>
+            <li><a class="block hover:text-primary hover:underline" href="blog.html">Blog</a></li>
+            <li><a class="block hover:text-primary hover:underline" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
+        const menuIcon = document.getElementById("menu-icon");
+
+        menuToggle.addEventListener("click", function () {
+          menu.classList.toggle("hidden");
+
+          // Toggle icon
+          if (menu.classList.contains("hidden")) {
+            menuIcon.classList.remove("fa-x");
+            menuIcon.classList.add("fa-bars");
+          } else {
+            menuIcon.classList.remove("fa-bars");
+            menuIcon.classList.add("fa-x");
+          }
+        });
+      </script>
+    </div>
+    <img class="w-full" src="./media/home/poster_3.jpg" alt="" />
+  </header>
+
+    <main>
+      <div class="mx-10">
+        <!-- categories and search -->
+        <section class="container my-10 flex justify-center">
+          <div class="flex items-center gap-2">
+            <input
+              type="search"
+              placeholder="Search..."
+              class="border px-4 py-2 rounded w-64"
+            />
+            <button class="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </section>
+        <!-- button of categories -->
+        <section class="container">
+          <div class="flex flex-wrap justify-start md:justify-center gap-10">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer">
+              All Products
+            </button>
+            <a href="nike.html">
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Nike</button>
+            </a>
+            <a href="adidas.html">
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Adidas</button>
+            </a>
+            <a href="convers.html">
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Convers</button>
+            </a>
+            <a href="new balance.html">
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">New Balance</button>
+            </a>
+            <a href="puma.html">
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Puma</button>
+            </a>
+            <a href="vans.html">
+              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Vans</button>
+            </a>
+          </div>
+        </section>
+        <!-- Product Grid -->
+        <section class="container" >
+          <div class="max-w-7xl mx-auto mt-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-13  px-4">
+          <!-- Product Card 1 -->
+            <div class="bg-white p-2 rounded-xl shadow hover:scale-105 transition">
+              <!-- image -->
+              <div class="bg-gray-200 rounded-xl p-5">
+                <div class="flex justify-between items-center">
+                  <img src="./media/shop/nikeicon.png" alt="">
+                  <i class="fa-regular fa-heart text-lg"></i>
+                </div>
+                <!-- Centered Image -->
+                <div class="flex justify-center items-center">
+                  <img src="./media/shop/nike.png" alt="" class="h-40 py-5 object-contain"/>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="space-y-2 mx-3">
+                <div class="flex justify-between items-center mt-5 box-si">
+                  <h3 class="font-bold text-lg text-brown-400">Nike</h3>
+                  <button class="bg-gray-100 rounded-full w-12 h-12 me-2"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+                <p class="text-sm text-gray-600">Nike Dunk Low GS 'Pink Velvet'</p>
+                <p class="font-simibold">$99.90</p>
+                <a href="productDetail.html#nike">
+                  <button class="bg-gray-600 text-white w-full py-2 mt-2 rounded-xl">See more</button>
+                </a>
+              </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="bg-white p-2 rounded-xl shadow hover:scale-105 transition">
+              <!-- image -->
+              <div class="bg-gray-200 rounded-xl p-5">
+                <div class="flex justify-between items-center">
+                  <img src="./media/shop/adidasIcon.png" alt="">
+                  <i class="fa-regular fa-heart text-lg"></i>
+                </div>
+                <!-- Centered Image -->
+                <div class="flex justify-center items-center">
+                  <img src="./media/shop/adidas.png" alt="Puma" class="h-40 py-5 object-contain"/>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="space-y-2 mx-3">
+                <div class="flex justify-between items-center mt-5 box-si">
+                  <h3 class="font-bold text-lg text-brown-400">Adidas</h3>
+                  <button class="bg-gray-100 rounded-full w-12 h-12 me-2"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+                <p class="text-sm text-gray-600">Nike Dunk Low GS 'Pink Velvet'</p>
+                <p class="font-simibold">$76.90</p>
+                <a href="productDetail.html#adidas">
+                  <button class="bg-gray-600 text-white w-full py-2 mt-2 rounded-xl">See more</button>
+                </a>
+              </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="bg-white p-2 rounded-xl shadow hover:scale-105 transition">
+              <!-- image -->
+              <div class="bg-gray-200 rounded-xl p-5">
+                <div class="flex justify-between items-center">
+                  <img src="./media/shop/conversIcon.png" alt="">
+                  <i class="fa-regular fa-heart text-lg"></i>
+                </div>
+                <!-- Centered Image -->
+                <div class="flex justify-center items-center">
+                  <img src="./media/shop/convers.png" alt="Puma" class="h-40 py-5 object-contain"/>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="space-y-2 mx-3">
+                <div class="flex justify-between items-center mt-5 box-si">
+                  <h3 class="font-bold text-lg text-brown-400">Convers</h3>
+                  <button class="bg-gray-100 rounded-full w-12 h-12 me-2"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+                <p class="text-sm text-gray-600">Nike Dunk Low GS 'Pink Velvet'</p>
+                <p class="font-simibold">$59.90</p>
+                <a href="productDetail.html#convers">
+                  <button class="bg-gray-600 text-white w-full py-2 mt-2 rounded-xl">See more</button>
+                </a>
+              </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="bg-white p-2 rounded-xl shadow hover:scale-105 transition">
+              <!-- image -->
+              <div class="bg-gray-200 rounded-xl p-5">
+                <div class="flex justify-between items-center">
+                  <img src="./media/shop/vansIcon.png" alt="">
+                  <i class="fa-regular fa-heart text-lg"></i>
+                </div>
+                <!-- Centered Image -->
+                <div class="flex justify-center items-center">
+                  <img src="./media/shop/vans.png" alt="van" class="h-40 py-5 object-contain"/>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="space-y-2 mx-3">
+                <div class="flex justify-between items-center mt-5 box-si">
+                  <h3 class="font-bold text-lg text-brown-400">Vans</h3>
+                  <button class="bg-gray-100 rounded-full w-12 h-12 me-2"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+                <p class="text-sm text-gray-600">Nike Dunk Low GS 'Pink Velvet'</p>
+                <p class="font-simibold">$87.90</p>
+                <a href="productDetail.html#convers">
+                  <button class="bg-gray-600 text-white w-full py-2 mt-2 rounded-xl">See more</button>
+                </a>
+              </div>
+            </div>
+            <div class="bg-white p-2 rounded-xl shadow hover:scale-105 transition">
+              <!-- image -->
+              <div class="bg-gray-200 rounded-xl p-5">
+                <div class="flex justify-between items-center">
+                  <img src="./media/shop/vansIcon.png" alt="">
+                  <i class="fa-regular fa-heart text-lg"></i>
+                </div>
+                <!-- Centered Image -->
+                <div class="flex justify-center items-center">
+                  <img src="./media/shop/puma.png" alt="Puma" class="h-40 py-5 object-contain"/>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="space-y-2 mx-3">
+                <div class="flex justify-between items-center mt-5 box-si">
+                  <h3 class="font-bold text-lg text-brown-400">Puma</h3>
+                  <button class="bg-gray-100 rounded-full w-12 h-12 me-2"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+                <p class="text-sm text-gray-600">Nike Dunk Low GS 'Pink Velvet'</p>
+                <p class="font-simibold">$67.90</p>
+                <a href="productDetail.html#new balance">
+                  <button class="bg-gray-600 text-white w-full py-2 mt-2 rounded-xl">See more</button>
+                </a>
+              </div>
+            </div>
+            <!-- Product Card 6 -->
+            <div class="bg-white p-2 rounded-xl shadow hover:scale-105 transition">
+              <!-- image -->
+              <div class="bg-gray-200 rounded-xl p-5">
+                <div class="flex justify-between items-center">
+                  <img src="./media/shop/vansIcon.png" alt="">
+                  <i class="fa-regular fa-heart text-lg"></i>
+                </div>
+                <!-- Centered Image -->
+                <div class="flex justify-center items-center">
+                  <img src="https://newcop.com/cdn/shop/files/02_5fea2651-3cf6-4465-a624-73bb68ebe903.png?height=1500&v=1717587422" alt="Puma" class="h-40 py-5 object-contain"/>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="space-y-2 mx-3">
+                <div class="flex justify-between items-center mt-5 box-si">
+                  <h3 class="font-bold text-lg text-brown-400">New Balance</h3>
+                  <button class="bg-gray-100 rounded-full w-12 h-12 me-2"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+                <p class="text-sm text-gray-600">Nike Dunk Low GS 'Pink Velvet'</p>
+                <p class="font-simibold">$76.90</p>
+                <a href="productDetail.html#puma">
+                  <button class="bg-gray-600 text-white w-full py-2 mt-2 rounded-xl">See more</button>
+                </a>
+              </div>
+            </div>
+            <!-- Product Card 7 -->
+            <div class="bg-white p-2 rounded-xl shadow hover:scale-105 transition">
+              <!-- image -->
+              <div class="bg-gray-200 rounded-xl p-5">
+                <div class="flex justify-between items-center">
+                  <img src="./media/shop/vansIcon.png" alt="">
+                  <i class="fa-regular fa-heart text-lg"></i>
+                </div>
+                <!-- Centered Image -->
+                <div class="flex justify-center items-center">
+                  <img src="https://www.hoopsheaven.com.au/cdn/shop/files/AURORA_IB8054-800_PHCFH001-2000_3024x.png?v=1736150188" alt="nike" class="h-40 py-5 object-contain"/>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="space-y-2 mx-3">
+                <div class="flex justify-between items-center mt-5 box-si">
+                  <h3 class="font-bold text-lg text-brown-400">Vans</h3>
+                  <button class="bg-gray-100 rounded-full w-12 h-12 me-2"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+                <p class="text-sm text-gray-600">Nike book 1 'Sedona'</p>
+                <p class="font-simibold">$99.90</p>
+                <a href="productDetail.html#nike">
+                  <button class="bg-gray-600 text-white w-full py-2 mt-2 rounded-xl">See more</button>
+                </a>
+              </div>
+            </div>
+            <!-- Product Card 8 -->
+            <div class="bg-white p-2 rounded-xl shadow hover:scale-105 transition">
+              <!-- image -->
+              <div class="bg-gray-200 rounded-xl p-5">
+                <div class="flex justify-between items-center">
+                  <img src="./media/shop/vansIcon.png" alt="">
+                  <i class="fa-regular fa-heart text-lg"></i>
+                </div>
+                <!-- Centered Image -->
+                <div class="flex justify-center items-center">
+                  <img src="https://pngimg.com/d/converse_PNG66.png" alt="convers" class="h-40 py-5 object-contain"/>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="space-y-2 mx-3">
+                <div class="flex justify-between items-center mt-5 box-si">
+                  <h3 class="font-bold text-lg text-brown-400">Convers</h3>
+                  <button class="bg-gray-100 rounded-full w-12 h-12 me-2"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+                <p class="text-sm text-gray-600"> Dunk Low GS 'Black Velvet'</p>
+                <p class="font-simibold">$87.90</p>
+                <a href="productDetail.html#vans">
+                  <button class="bg-gray-600 text-white w-full py-2 mt-2 rounded-xl">See more</button>
+                </a>
+              </div>
+            </div>
+            </div>
+        </section>
+      </div>
+    </main>
+
+
+    <footer>
+    <div class="flex flex-col p-2 mx-5">
+      <hr class="my-4 border-gray-500">  
+      <div class="flex flex-col md:flex-row justify-between">
+        <!-- Logo Area -->
+        <div class="flex items-center justify-around">
+          <img class="h-24" src="media/logo.png" alt="logo">
+          <p class="w-32">Your destination for colorful and stylist shoes</p>
+          <div class="flex items-center">
+          <img class="h-24" src="media/ISTAD.png" alt="ISTAD">
+          <h3 class="text-2xl font-semibold">ISTAD</h3>
+        </div>
+        </div>
+        
+        <!-- Quick Link Area -->
+        <div class="my-5">
+          <h3 class="mb-5 font-semibold">Quick Link</h3>
+          <ul class="flex justify-evenly md:flex-col gap-4 md:gap-0">
+            <li><a class="hover:underline" href="/index.html">Home</a></li>
+            <li><a class="hover:underline" href="/Shop.html">Shop</a></li>
+            <li><a class="hover:underline" href="/about.html">About</a></li>
+            <li><a class="hover:underline" href="/blog.html">Blog</a></li>
+            <li><a class="hover:underline" href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Follow Area -->
+        <div class="w-[251px] my-5">
+          <h3 class="mb-5 font-semibold">Follow Us</h3>
+          <div>
+            <i class="fa-brands fa-facebook text-5xl"></i>
+            <i class="fa-brands fa-instagram text-5xl"></i>
+            <i class="fa-brands fa-x-twitter text-5xl"></i>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4 border-gray-500">
+      <p class="text-center">&copy; 2025 Azure. All rights reserved</p>
+    </div>
+  </footer>
+
+  </body>
+</html>
