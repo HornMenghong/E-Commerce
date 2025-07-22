@@ -16,6 +16,7 @@
     <title>Shop</title>
   </head>
   <body>
+  <header>
     <div class="relative">
 
       <nav class="absolute top-0 left-0 w-full py-2 px-4">
@@ -23,7 +24,7 @@
           <!-- Left Logo + Text -->
           <div class="flex items-center gap-2">
             <img class="h-12" src="media/logo.png" alt="Logo" />
-            <p class="font-semibold">Azure</p>
+            <p class="font-semibold text-primary">Azure</p>
           </div>
 
           <!-- Hamburger Button (Hidden on md and up) -->
@@ -81,50 +82,51 @@
 
     <main>
       <div class="mx-10">
-        <!-- categories and search -->
-        <section class="container my-10 flex justify-center">
-          <div class="flex items-center gap-2">
-            <input
-              type="search"
-              placeholder="Search..."
-              class="border px-4 py-2 rounded w-64"
-            />
-            <button class="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </section>
+        
         <!-- button of categories -->
-        <section class="container">
-          <div class="flex flex-wrap justify-start md:justify-center gap-10">
+        <section class="mx-auto my-10">
+          <div class="flex flex-wrap justify-start md:justify-center gap-2">
             <a href="Shop.html">
               <button class="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer">
                 All Products
               </button>
             </a>
             <a href="nike.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Nike</button>
+              <button class="border px-4 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Nike</button>
             </a>
             <a href="adidas.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Adidas</button>
+              <button class="border px-4 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Adidas</button>
             </a>
             <a href="convers.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Converse</button>
+              <button class="border px-4 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Converse</button>
             </a>
             <a href="new balance.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">New Balance</button>
+              <button class="border px-4 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">New Balance</button>
             </a>
             <a href="puma.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Puma</button>
+              <button class="border px-4 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Puma</button>
             </a>
             <a href="vans.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Vans</button>
+              <button class="border px-4 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Vans</button>
             </a>
+            <!-- categories and search -->
+          <section class="flex justify-center">
+            <div class="flex items-center gap-2">
+              <input
+                type="search"
+                placeholder="Search..."
+                class="border px-4 py-2 rounded w-64"
+              />
+              <button class="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </section>
           </div>
         </section>
         <!-- Product Grid -->
-        <section class="container" >
-          <div class="max-w-7xl mx-auto mt-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-13  px-4">
+        <section class="" >
+          <div class="mx-auto mt-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-13 px-4">
           <!-- Product Card 1 -->
             <div class="bg-white p-2 rounded-xl shadow hover:scale-105 transition">
               <!-- image -->
@@ -344,12 +346,14 @@
       <div class="flex flex-col md:flex-row justify-between">
         <!-- Logo Area -->
         <div class="flex items-center justify-around">
-          <img class="h-12 md:h-24" src="media/logo.png" alt="logo">
-          <p class="w-32">Your destination for colorful and stylist shoes</p>
           <div class="flex items-center">
-          <img class="h-12 md:h-24" src="media/ISTAD.png" alt="ISTAD">
-          <h3 class="text-lg md:text-2xl font-semibold">ISTAD</h3>
-        </div>
+            <img class="h-12 md:h-24" src="media/logo.png" alt="ISTAD">
+            <h3 class="text-lg md:text-2xl font-semibold mx-2 text-primary">Azure</h3>
+          </div>
+          <div class="flex items-center">
+            <img class="h-12 md:h-24" src="media/ISTAD.png" alt="ISTAD">
+            <h3 class="text-lg md:text-2xl font-semibold mx-2 text-primary">ISTAD</h3>
+          </div>
         </div>
         
         <!-- Quick Link Area -->

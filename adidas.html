@@ -17,38 +17,67 @@
 </head>
 <body>
     <!-- Head -->
-    <header class="shadow-md bg-white">
-      <nav class="flex justify-between items-center text-dark mx-5">
-        <div class="flex items-center">
+    <header>
+    
+  <div class="shadow-md">
+    <nav class="w-full py-2 px-4">
+      <div class="flex items-center justify-between">
+        <!-- Left Logo + Text -->
+        <div class="flex items-center gap-2">
           <img class="h-12" src="media/logo.png" alt="Logo" />
-          <p>Azure</p>
+          <p class="text-primary font-semibold">Azure</p>
         </div>
-        <ul class="flex justify-between items-center gap-4">
-          <li>
-            <a class="hover:text-primary hover:underline" href="index.html"
-              >Home</a
-            >
-          </li>
-          <li><a class="text-primary underline" href="Shop.html">Shop</a></li>
-          <li>
-            <a class="hover:text-primary hover:underline" href="about.html"
-              >About</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-primary hover:underline" href="blog.html"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-primary hover:underline" href="contact.html"
-              >Contact</a
-            >
-          </li>
+
+        <!-- Hamburger Button (Hidden on md and up) -->
+        <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none cursor-pointer">
+          <i id="menu-icon" class="fas fa-bars"></i>
+        </button>
+
+        <!-- Desktop Nav Links (Hidden on small screens) -->
+        <ul class="hidden md:flex items-center gap-x-10">
+          <li><a class="hover:text-primary hover:underline" href="index.html">Home</a></li>
+          <li><a class="hover:text-primary hover:underline" href="Shop.html">Shop</a></li>
+          <li><a class="hover:text-primary hover:underline" href="about.html">About</a></li>
+          <li><a class="text-primary underline" href="blog.html">Blog</a></li>
+          <li><a class="hover:text-primary hover:underline" href="contact.html">Contact</a></li>
         </ul>
-        <img class="rounded-full h-12" src="media/home/expert_2.jpg" alt="" />
+
+        <!-- Right Logo -->
+        <div class="hidden md:block mr-5">
+          <img class="rounded-full h-12" src="media/home/expert_2.jpg" alt="Right Logo"/>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (Hidden by default) -->
+        <ul id="mobile-menu" class="md:hidden mt-3 space-y-2 text-white bg-black/70 p-4 rounded hidden">
+          <li><a class="block hover:text-primary hover:underline" href="index.html">Home</a></li>
+          <li><a class="block hover:text-primary hover:underline" href="Shop.html">Shop</a></li>
+          <li><a class="block hover:text-primary hover:underline" href="about.html">About</a></li>
+          <li><a class="block text-primary underline" href="blog.html">Blog</a></li>
+          <li><a class="block hover:text-primary hover:underline" href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-    </header>
+    </div>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+
+    menuToggle.addEventListener("click", function () {
+      menu.classList.toggle("hidden");
+
+      // Toggle icon
+      if (menu.classList.contains("hidden")) {
+        menuIcon.classList.remove("fa-x");
+        menuIcon.classList.add("fa-bars");
+      } else {
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-x");
+      }
+    });
+  </script>
+  </header>
 
     <main>
       <div class="mx-10">
@@ -62,45 +91,45 @@
             </div>
           </div>
         </section>
-        <!-- categories and search -->
-        <section class="container my-10 flex justify-center">
-          <div class="flex items-center gap-2">
-            <input
-              type="search"
-              placeholder="Search..."
-              class="border px-4 py-2 rounded w-64"
-            />
-            <button class="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </section>
         <!-- button of categories -->
-        <section class="container">
-          <div class="flex flex-wrap justify-start md:justify-center gap-10">
+        <section class="mx-auto my-10">
+          <div class="flex flex-wrap justify-start md:justify-center gap-2">
             <a href="Shop.html">
               <button class="border hover:bg-blue-600 hover:text-white px-4 py-2 rounded cursor-pointer">
                 All Products
               </button>
             </a>
             <a href="nike.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Nike</button>
+              <button class="border px-4 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Nike</button>
             </a>
             <a href="adidas.html">
-              <button class="px-8 py-2 rounded bg-blue-600 text-white cursor-pointer">Adidas</button>
+              <button class="border px-4 py-2 rounded bg-blue-600 text-white cursor-pointer">Adidas</button>
             </a>
             <a href="convers.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Converse</button>
+              <button class="border px-4 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Converse</button>
             </a>
             <a href="new balance.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">New Balance</button>
+              <button class="border px-4 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">New Balance</button>
             </a>
             <a href="puma.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Puma</button>
+              <button class="border px-4 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Puma</button>
             </a>
             <a href="vans.html">
-              <button class="border px-8 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Vans</button>
+              <button class="border px-4 py-2 rounded hover:bg-blue-600 hover:text-white cursor-pointer">Vans</button>
             </a>
+            <!-- categories and search -->
+          <section class="flex justify-center">
+            <div class="flex items-center gap-2">
+              <input
+                type="search"
+                placeholder="Search..."
+                class="border px-4 py-2 rounded w-64"
+              />
+              <button class="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </section>
           </div>
         </section>
         <!-- Products -->
@@ -267,12 +296,14 @@
       <div class="flex flex-col md:flex-row justify-between">
         <!-- Logo Area -->
         <div class="flex items-center justify-around">
-          <img class="h-12 md:h-24" src="media/logo.png" alt="logo">
-          <p class="w-32">Your destination for colorful and stylist shoes</p>
           <div class="flex items-center">
-          <img class="h-12 md:h-24" src="media/ISTAD.png" alt="ISTAD">
-          <h3 class="text-lg md:text-2xl font-semibold">ISTAD</h3>
-        </div>
+            <img class="h-12 md:h-24" src="media/logo.png" alt="ISTAD">
+            <h3 class="text-lg md:text-2xl font-semibold mx-2 text-primary">Azure</h3>
+          </div>
+          <div class="flex items-center">
+            <img class="h-12 md:h-24" src="media/ISTAD.png" alt="ISTAD">
+            <h3 class="text-lg md:text-2xl font-semibold mx-2 text-primary">ISTAD</h3>
+          </div>
         </div>
         
         <!-- Quick Link Area -->
